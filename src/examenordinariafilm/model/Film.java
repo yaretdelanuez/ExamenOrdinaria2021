@@ -5,8 +5,10 @@ import java.util.HashMap;
 
 
 public class Film {
-    private HashMap<String,Film> map = new HashMap<String,Film>();
-    
+    //creo que debo de guardarlo en un hash map para dsp poder ordenarlos ya sea por Rating, duration, etc
+    //(cuando empece tenía la idea de que se me pasaban por un bd o algo externo a mi),  pero me acabo de 
+    //dar cuenta que las debo de dejar creadas yo con sus parametros para poder hacer una clase con metodos de ordenación
+    // por fechas, por duracion , novedades para despues poder tener los datos y sacar las peliculas por orden de duracion por ejemplo
     private String title;
     private int year;
     private String director;
@@ -14,7 +16,7 @@ public class Film {
     private Gender gender;
     private Rating rating;
     private int duration;//en min 
-
+    
     public Film(String title, int year, String director, String actors, Gender gender, Rating rating, int duration) {
         this.title = title;
         this.year = year;
