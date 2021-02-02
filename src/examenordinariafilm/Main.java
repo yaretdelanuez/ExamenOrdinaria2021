@@ -46,8 +46,9 @@ public class Main extends JFrame {
     private void execute() {
         this.images = new loadCover(new File("fotos")).load();
         this.imageDisplay.display(images.get(0));
-        //this.commands.put("<", new PrevImageCommand(images, imageDisplay));
-        //this.commands.put(">", new NextImageCommand(images, imageDisplay));
+        //this.commands.put("<", new PrevImageCommand(images, imageDisplay)); //cuando cree el Prev tendria que pasar de portada porpor género, novedades,
+                                                                              //las más vistas, las más valoradas 
+        //this.commands.put(">", new NextImageCommand(images, imageDisplay)); // lo mismo pasaria con el next
         this.setVisible(true);
     }
 

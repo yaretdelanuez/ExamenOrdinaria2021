@@ -1,8 +1,11 @@
 
 package examenordinariafilm.model;
 
+import java.util.HashMap;
+
 
 public class Film {
+    private HashMap<String,Film> map = new HashMap<String,Film>();
     
     private String title;
     private int year;
@@ -21,7 +24,8 @@ public class Film {
         this.rating = rating;
         this.duration = duration;
     }
-
+    
+    
     public void setTitle(String title) {
         this.title = title;
     }
@@ -78,5 +82,6 @@ public class Film {
         return duration;
     }
     
+     
     
 }
